@@ -1,0 +1,72 @@
+@import '@fontsource/montserrat/700.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1440px;
+  max-height: 1629px;
+  background-color: #EAEAEA;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin: 0 165px;
+}
+
+.logo {
+  margin-top: 15px;
+  width: 85px;
+  height: 30px;
+  color: #101010;
+  font-size: 25px;
+  font-weight: 700px;
+}
+
+.nav-icons-container {
+  position: relative;
+  display: flex;
+  margin-right: 25px;
+  align-items: center;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.nav-icons {
+  margin-top: 20px;
+}
+
+.like-icon {
+  margin-right: 40px;
+}
+
+.icon-badge {
+  position: absolute;
+  top: 15px; 
+  right: -5px; 
+  background-color: #FFA542;
+  color: white;
+  border-radius: 50%; 
+  width: 17.4px; 
+  height: 17.4px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+main {
+  margin: 28px 148px 0px 182px;
+}
