@@ -18,7 +18,10 @@ const productsSlice = createSlice({
       if (product) {
         product.count += 1;
         state.cash += product.price;
-      } else state.buyProducts.push({ ...payload, count: 1 });
+      } else {
+        state.buyProducts.push({ ...payload, count: 1 });
+        state.cash += payload.price;
+      }
     },
   },
 });

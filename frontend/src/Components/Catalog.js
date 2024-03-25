@@ -1,8 +1,11 @@
+import React from 'react';
 import { ReactComponent as IconStar } from '../icons/Star.svg'
 import { useSelector, useDispatch } from 'react-redux';
+import uniqueId from 'lodash/uniqueId.js';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { addBuyProduct } from '../slices/basketSlice';
+
 
 
 const Product = ({ img, title, price, rate, id }) => {
@@ -14,7 +17,9 @@ const Product = ({ img, title, price, rate, id }) => {
 
   return (
     <div className='product'>
-      <img src={img} alt={`product ${title}`} className='img-product' />
+      <div className='img-center'>
+        <img src={img} alt={`product ${title}`} className='img-product' />
+      </div>
       <div className='title-price'>
         <span className='title'>{title}</span>
         <span className='price'>{`${price} P`}</span>
@@ -24,7 +29,7 @@ const Product = ({ img, title, price, rate, id }) => {
           <IconStar />
           <span className='rate'>{rate}</span>
         </div>
-        <span onClick={clickBuy} className='buy hover'>Купить</span>
+        <button href='#' onClick={clickBuy} className='buy hover'>Купить</button>
       </div>
     </div>
   )
@@ -46,6 +51,7 @@ const Categories = ({ name, catId }) => {
 
 export const Catalog = () => {
   const categories = useSelector((state) => state.products.categories);
+  const languages = [{ name: 'Рус', id: uniqueId(), active: true }, {name: 'Eng', id: uniqueId(), active: false }];
 
   return (
     <>
@@ -55,7 +61,7 @@ export const Catalog = () => {
           {categories.map(({ name, catId }) => <Categories name={name} catId={catId} key={catId} />)}
         </div>
       </main>
-      <Footer />
+      <Footer languages={languages} />
     </>
   )
 }
