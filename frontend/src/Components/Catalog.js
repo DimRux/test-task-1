@@ -5,6 +5,7 @@ import uniqueId from 'lodash/uniqueId.js';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { addBuyProduct } from '../slices/basketSlice';
+import { useState } from 'react';
 
 
 
@@ -51,7 +52,8 @@ const Categories = ({ name, catId }) => {
 
 export const Catalog = () => {
   const categories = useSelector((state) => state.products.categories);
-  const languages = [{ name: 'Рус', id: uniqueId(), active: true }, {name: 'Eng', id: uniqueId(), active: false }];
+  const [languages, setLanguages] = useState([{ name: 'Рус', id: uniqueId(), active: true }, {name: 'Eng', id: uniqueId(), active: false }]);
+  const style = {name: 'footer-v1'};
 
   return (
     <>
@@ -61,7 +63,7 @@ export const Catalog = () => {
           {categories.map(({ name, catId }) => <Categories name={name} catId={catId} key={catId} />)}
         </div>
       </main>
-      <Footer languages={languages} />
+      <Footer languages={languages} setLanguages={setLanguages} style={style}/>
     </>
   )
 }

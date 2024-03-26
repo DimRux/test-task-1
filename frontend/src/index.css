@@ -184,8 +184,12 @@ nav {
   color: #000000;
 }
 
-footer {
+.footer-v1 {
   margin: 20px 148px 0px 182px;
+}
+
+.footer-v2 {
+  margin: 20px 148px 0px 165px;
 }
 
 .footer-container {
@@ -374,7 +378,7 @@ footer {
 
 .button {
   width: 349px;
-  height: 65px;
+  height: 45px;
   border-radius: 20px;
   background-color: #000000;
   color: #FFFFFF;
@@ -383,6 +387,14 @@ footer {
   cursor: pointer; 
   text-align: center;
   font-size: 17px;
+}
+
+.height-120px {
+  max-height: 120px;
+}
+
+.margin-top-35 {
+  margin-top: 35px;
 }
 
 .button:hover {
@@ -394,6 +406,13 @@ footer {
   transform: scale(1.2);
   transition: transform 0.3s ease;
   filter: drop-shadow(0 0 1px #FFA542);
+}
+
+.icon-basket-effect:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 1px #000000);
 }
 
 a {
