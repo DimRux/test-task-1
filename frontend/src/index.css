@@ -130,13 +130,21 @@ nav {
   margin: 15px auto 0 auto;
 }
 
+.info {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
 .img-center {
+  position: relative;
   display: flex;
   height: 253px;
   align-items: center;
 }
 
 .title-price {
+  position: relative;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -153,6 +161,16 @@ nav {
 .price {
   font-size: 17px;
   color: #FFA542;
+}
+
+.before-price {
+  padding: 7px 0;
+  right: 5px;
+  position: absolute;
+  top: 14px;
+  text-decoration: line-through;
+  font-size: 13px;
+  color: #FFCE7F;
 }
 
 .icon-rate {
@@ -422,4 +440,71 @@ a {
 
 button {
   all: unset;
+}
+
+/* pay */
+
+.container {
+  border-radius: 30px;
+  background-color: white;
+  margin-left: 165px;
+  max-width: 1110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  min-width: 400px;
+  background-color: #EAEAEA;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-pay {
+  max-width: 180px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px 20px; 
+  border: none; 
+  cursor: pointer; 
+  text-align: center;
+  font-size: 17px;
+}
+
+.button-pay:hover {
+  background-color: #FFA542;
 }
