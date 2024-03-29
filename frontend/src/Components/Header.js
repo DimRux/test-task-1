@@ -1,3 +1,4 @@
+import React from 'react';
 import { ReactComponent as IconLike } from '../icons/Like.svg'
 import { ReactComponent as IconBasket } from '../icons/Basket.svg'
 import { useSelector, useDispatch } from 'react-redux';

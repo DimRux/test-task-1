@@ -4,7 +4,7 @@ import initI18next from './i18next.js';
 import store from './slices/index.js';
 import { Catalog } from './Components/Catalog.js';
 import { Basket } from './Components/Basket.js';
-import { PayForm } from './Components/PayForm.js';
+import { Pay } from './Components/PayForm.js';
 
 function App() {
   initI18next();
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Catalog />} />
           <Route path="/basket" element={<Basket />} />
-          <Route path="/pay" element={<PayForm />} />
+          <Route path="/pay" element={<Pay />} />
         </Routes>
       </BrowserRouter>
     </Provider>

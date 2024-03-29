@@ -7,6 +7,14 @@ const kz = {
       buyButton: 'Кассаға өтіңіз',
       resetButton: 'Бос қоқыс',
       inTotal: 'Жалпы',
+      pay: {
+        cardNumber: 'Карта нөмірі:',
+        name: 'Аты-жөні:',
+        validity: 'Жарамдылық:',
+        cvc: 'CVC коды:',
+        basket: 'Себетке қосу',
+        pay: 'Төлеу',
+      },
     },
   };
   

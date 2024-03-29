@@ -54,7 +54,7 @@ export const Footer = ({ languages, setLanguages, style }) => {
             <a href='https://www.neoflex.ru/contacts' className='hover'>{t('contacts')}</a>
           </div>
           <div className='links-group-two'>
-            <a href='https://www.neoflex.ru/about/career' className='margin-left-2 hover'>{t('сonditions')}</a>
+            <a href='https://www.neoflex.ru/about/career' className='hover'>{t('сonditions')}</a>
             <div className='flex'>
               <a href='https://www.google.com/'><IconBrouser className='icon-effect' /></a>
               {languages.map(({ name, id, active }) => (
